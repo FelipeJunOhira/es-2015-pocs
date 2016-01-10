@@ -1,4 +1,47 @@
+## Babel
+
+### Dependencies Installation
+
+```
+npm init
+npm install babel-cli babel-preset-es2015 --save-dev
+```
+
+### package.json
+
+``` json
+
+{
+  "name": "babel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d app"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "6.4.0",
+    "babel-preset-es2015": "6.3.13"
+  }
+}
+
+```
+
+### .babelrc
+
+``` json
+{
+  "presets": [
+    "es2015"
+  ]
+}
+```
+
 ## Webpack-Babel
+
+### Dependencies Installation
 
 ```
 npm init
@@ -15,7 +58,6 @@ npm install webpack babel-loader babel-core babel-preset-es2015 --save-dev
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:js",
     "build:js": "webpack",
     "prewatch": "npm run build",
@@ -25,10 +67,10 @@ npm install webpack babel-loader babel-core babel-preset-es2015 --save-dev
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.4.0",
-    "babel-loader": "^6.2.1",
-    "babel-preset-es2015": "^6.3.13",
-    "webpack": "^1.12.10"
+    "babel-core": "6.4.0",
+    "babel-loader": "6.2.1",
+    "babel-preset-es2015": "6.3.13",
+    "webpack": "1.12.10"
   }
 }
 
